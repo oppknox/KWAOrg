@@ -4,22 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>KlickWay Athletics - Organization (Current and Future)</title>
+<title>Markmap</title>
 <style>
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: black;
+  background-color: black; /* Set to black or any preferred background color */
 }
 #mindmap {
   display: block;
   width: 100vw;
   height: 100vh;
-  background-color: transparent; /* Ensures Markmap graph remains visible */
+  background-color: transparent; /* Ensures Markmap stays transparent */
 }
-  
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
 </head>
@@ -32,13 +31,8 @@ body {
 (r => {
   setTimeout(r);
 })(() => {
-  const {
-    markmap,
-    mm
-  } = window;
-  const {
-    el
-  } = markmap.Toolbar.create(mm);
+  const { markmap, mm } = window;
+  const { el } = markmap.Toolbar.create(mm);
   el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
   document.body.append(el);
 })
@@ -51,4 +45,7 @@ body {
     (getOptions || markmap.deriveOptions)(jsonOptions),
     root2
   );
-})(() => window.markmap,null,{"content":"KLICKWAY ATHLETICS Organization","children":[{"content":"<strong>CEO</strong>","children":[{"content":"Sets vision and long-term strategy","children":[],"payload":{"lines":"2,3"}},{"content":"Oversees overall gym operations","children":[],"payload":{"lines":"3,4"}},{"content":"Ensures alignment across departments","children":[],"payload":{"lines":"4,5"}}],"payload":{"lines":"1,5"}},{"content":"<strong>COO</strong>","children":[{"content":"<strong>Core Responsibilites</strong>","children":[{"content":"Executes CEO's vision","children":[],"payload":{"lines":"7,8"}},{"content":"Manages daily operations","children":[],"payload":{"lines":"8,9"}},{"content":"Coordinates between departments","children":[],"payload":{"lines":"9,10"}}],"payload":{"lines":"6,10"}},{"content":"<strong>Direct Reports</strong>","children":[{"content":"<st
+})(() => window.markmap,null,{"content":"KLICKWAY ATHLETICS Organization","children":[{"content":"<strong>CEO</strong>","children":[{"content":"Sets vision and long-term strategy","children":[]},{"content":"Oversees overall gym operations","children":[]},{"content":"Ensures alignment across departments","children":[]}]}]});
+</script>
+</body>
+</html>
